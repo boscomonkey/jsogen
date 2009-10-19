@@ -1,0 +1,9 @@
+*~
+.DS_Store
+.loadpath
+.project
+.tmp_*~
+Thumbs.db
+log
+nbproject
+tmp
