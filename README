@@ -1,0 +1,24 @@
+JsoGen
+
+by Bosco So <rubymeetup _AT_ boscoso _DOT_ com>
+
+JsoGen is a command line script that generates GWT JavaScript Overlay
+Object classes based on JSON retrieved from an URL. It was written to
+make it easier and less error prone to generate GWT JSO source files
+when given a representative JSON string.
+
+Invoke JsoGen on the command line with the following:
+
+jso_gen.rb URL
+
+This will generate as many JSO source files as necessary to represent
+the JSON emitted by URL. These source files will have mangled class
+names to remain distinct from each other. Any tool with refactoring
+capability (i.e., Eclipse) will let you rename them as appropriate. Or
+you can simply use a text editor.
+
+If you pass an optional package name on the command line, the output
+source files will use that as its package specifier.
+
+jso_gen.rb URL PKG
+
